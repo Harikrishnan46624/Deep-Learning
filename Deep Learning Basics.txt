@@ -1,0 +1,22 @@
+What is Deep Learning?
+It is a subfield of Machine Learning, inspired by the biological neurons of a brain, and translating that to artificial neural networks with representation learning
+Why Deep learning?
+When the volume of data increases, Machine learning techniques, no matter how optimized, starts to become inefficient in terms of performance and accuracy, whereas Deep learning performs soo much better in such cases
+Fields where DL is used
+Image Classification, Speech recognition, NLP(Natural language Processing), recommendation systems, etc.
+Difference Between Deep Learning and Machine Learning
+Deep Learning is a subset of Machine Learning.
+In Machine Learning features are provided manually.
+Whereas Deep Learning learns features directly from the data
+
+Forward propagation
+For neurons in the second hidden layer (outputs of the previously hidden layer) are considered as inputs and each of these neurons are connected to previous neurons, likewise. This whole process is called Forward propagation
+
+Activation Functions:
+Activation functions introduce non-linearity to the neural network, allowing it to learn complex patterns and relationships
+
+Gradient Descent:
+Gradient Descent is an optimization algorithm used to minimize the cost function and update the parameters (weights and biases) of the neural network
+
+Cost Function (Loss Function):
+The cost function measures the difference between the predicted values and the actual values. The goal during training is to minimize this function
