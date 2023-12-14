@@ -1,0 +1,77 @@
+Deep Learning is a subfield of Machine Learning, inspired by the biological neurons of a brain, and translating that to artificial neural networks
+
+Why Deep learning?
+When the volume of data increases, Machine learning techniques, no matter how optimized, starts to become inefficient in terms of performance and accuracy, whereas Deep learning performs soo much better in such cases
+
+Difference Between Deep Learning and Machine Learning
+Deep Learning is a subset of Machine Learning.
+In Machine Learning features are provided manually.
+Whereas Deep Learning learns features directly from the data
+
+What is an artificial neural network in machine learning?
+A neural network is a method in artificial intelligence that teaches computers to process data in a way that is inspired by the human brain. It is a type of machine learning process, called deep learning, that uses interconnected nodes or neurons in a layered structure that resembles the human brain.
+
+Applications of Neural Networks:
+Image recognition: Classifying objects and detecting faces in images.
+Natural language processing: Understanding and generating human language.
+Machine translation: Translating text from one language to another.
+Speech recognition: Converting spoken language to text.
+Robotics: Controlling robots and making them move and interact with the environment.
+Finance: Predicting stock prices and detecting fraud.
+Healthcare: Diagnosing diseases and analyzing medical images.
+
+Limitations
+1. Data Dependency:
+2. Computational Resources:
+3. Interpretability:
+4. Overfitting:
+5. Limited Transfer Learning:
+6. Training Time:
+
+Challenges of Neural Networks:
+Overfitting: The network memorizes the training data and fails to generalize to unseen data.
+Underfitting: The network fails to learn the underlying patterns in the data.
+Explainability: Understanding how networks make decisions can be difficult.
+Computational cost: Training large networks can be computationally expensive and require significant resources.
+Data requirements: Large amounts of data are often needed to train effective networks.
+
+Activation Functions:
+Activation functions introduce non-linearity into the network, allowing it to learn complex patterns.
+They determine whether a neuron fires or not based on its weighted sum of inputs.
+
+Sigmoid: Outputs values between 0 and 1, suitable for binary classification.
+Tanh: Outputs values between -1 and 1, suitable for regression and multi-class classification.
+ReLU (Rectified Linear Unit): Outputs the input directly if it's positive, otherwise outputs 0. Efficient for image and speech recognition.
+Leaky ReLU: Similar to ReLU, but outputs a small non-zero value for negative inputs. Helps prevent vanishing gradients
+
+
+Cost Function (Loss Function):
+The cost function measures the difference between the predicted values and the actual values. The goal during training is to minimize this function
+
+Mean Squared Error (MSE): Used for regression tasks, measures the average squared difference between predicted and actual values.
+Cross-entropy: Used for classification tasks, measures the information gain between the predicted and actual probability distributions.
+Log-loss: Similar to cross-entropy, but for binary classification
+
+Gradient Descent:
+Gradient Descent is an optimization algorithm used to minimize the cost function and update the parameters (weights and biases) of the neural network
+
+Batch Gradient Descent: Updates parameters based on the entire training dataset after each epoch.
+Stochastic Gradient Descent (SGD): Updates parameters based on a single training sample after each step.
+Mini-batch Gradient Descent: Updates parameters based on a small subset of training samples (mini-batch) after each step.
+
+Forward propagation
+For neurons in the second hidden layer (outputs of the previously hidden layer) are considered as inputs and each of these neurons are connected to previous neurons, likewise. This whole process is called Forward propagation
+
+Backward Propagation (Backpropagation):
+Backward propagation is the process by which the neural network learns from its errors. It involves adjusting the weights and biases based on the calculated gradients of the loss function with respect to the parameters
+
+
+
+Optimization Techniques
+Optimization in deep learning refers to the process of adjusting the parameters of a model to minimize (or maximize, in some cases) a loss function. The objective is to find the optimal set of parameters that allow the model to make accurate predictions on unseen data
+
+1. Stochastic Gradient Descent (SGD):
+2. Mini-Batch Gradient Descent:
+3. Batch Gradient Descent:
+5. Aagrad (Adaptive Gradient Algorithm):
+7. Adam (Adaptive Moment Estimation):
