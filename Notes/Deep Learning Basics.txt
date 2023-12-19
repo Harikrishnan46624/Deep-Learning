@@ -63,9 +63,8 @@ Forward propagation
 For neurons in the second hidden layer (outputs of the previously hidden layer) are considered as inputs and each of these neurons are connected to previous neurons, likewise. This whole process is called Forward propagation
 
 Backward Propagation (Backpropagation):
+
 Backward propagation is the process by which the neural network learns from its errors. It involves adjusting the weights and biases based on the calculated gradients of the loss function with respect to the parameters
-
-
 
 Optimization Techniques
 Optimization in deep learning refers to the process of adjusting the parameters of a model to minimize (or maximize, in some cases) a loss function. The objective is to find the optimal set of parameters that allow the model to make accurate predictions on unseen data

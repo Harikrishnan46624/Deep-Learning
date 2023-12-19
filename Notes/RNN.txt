@@ -1,0 +1,9 @@
+Advantages of RNNs:
+Handle sequential data effectively, including text, speech, and time series.
+Process inputs of any length, unlike feedforward neural networks.
+Share weights across time steps, enhancing training efficiency
+
+Disadvantages of RNNs:
+Prone to vanishing and exploding gradient problems, hindering learning.
+Training can be challenging, especially for long sequences.
+Computationally slower than other neural network architectures
