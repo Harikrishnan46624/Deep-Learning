@@ -1,0 +1,52 @@
+TENSORFLOW
+TensorFlow is an open-source machine learning library developed by the Google Brain team. It provides a comprehensive set of tools for building and deploying machine learning models.TensorFlow can train and run the deep neural networks for image recognition, handwritten digit classification, recurrent neural network, word embedding, natural language processing, video detection, and many more. TensorFlow is run on multiple CPUs or GPUs and also mobile operating systems
+
+Tensors
+Tensors are multi-dimensional arrays that represent the data used by TensorFlow. They are the fundamental building blocks of TensorFlow computations.
+
+Tensor - tensor is a vector or a matrix of n-dimensional that represents all type of data
+Flow is used to define the flow of data in operation
+
+TensorFlow graph
+graph represents a computation as a series of nodes (operations) connected by edges. Each node in the graph represents an operation, and the edges represent the flow of data between operations.
+
+Eager execution in TensorFlow.
+Eager execution is an imperative programming environment in TensorFlow that allows operations to be executed immediately as they are called, rather than building a computational graph to execute later.
+
+Advantages
+Graph
+Libary Managment
+Debuugging
+Scalablity
+Pipelining
+
+Disadvantages
+No support for windows
+No GPU support other than nivida and only langauge support
+Benchmark tests
+Computation Tests
+Missing symbolic loops
+
+KERAS
+Keras is a high-level neural networks API written in Python and capable of running on top of TensorFlow, Theano, or Microsoft Cognitive Toolkit. Keras provides a user-friendly and modular interface to build and train deep learning models
+
+Sequential and Functional API in Keras
+The Sequential API is a linear stack of layers, while the Functional API allows for more complex model architectures, including multiple inputs and outputs, shared layers, and non-linear connections.
+
+Keras layer
+Keras layer is a fundamental building block of a neural network. It represents a processing unit that can be connected to other layers to build a model. Layers can have parameters that are learned during training.
+
+Transfer learning
+Transfer learning involves using a pre-trained model as a starting point for a new task. In Keras, this is often done by loading a pre-trained model
+
+Advantages
+Easy to use:Keras is a high-level API, which makes it easy to learn and use, even for beginners
+Flexible:Keras is flexible and can be used to build a wide variety of deep learning models.
+Modular:Keras is modular, which means that it is easy to add new layers and functionality.
+Backend support:Keras supports multiple backends, including TensorFlow, Theano, and CNTK. This means that you can choose the backend that best suits your needs
+Pre-trained models:Keras provides a number of pre-trained models that you can use for your own projects. This can save you a lot of time and effort
+
+Disadvantages
+Slower than lower-level APIs: Keras is slower than lower-level APIs because it abstracts away some of the details of the deep learning process.
+Less control: Keras gives you less control over the deep learning process than lower-level APIs.
+Limited functionality: Keras does not have all of the functionality of lower-level APIs

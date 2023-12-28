@@ -1,9 +1,77 @@
+RNN
+RNN stands for Recurrent Neural Network. It's a type of artificial neural network designed for sequence data, allowing information to persist within the network, making it suitable for tasks like natural language processing and time series analysis. RNNs have connections that form loops, enabling them to maintain a memory of previous inputs in their computations
+
+Application
+Natural Language Processing (NLP)
+Time Series Prediction:
+Image and Video Analysis:
+Autonomous Vehicles:
+
+Working
+RNNs is to process sequential data while maintaining an internal memory or state that can capture information from previous inputs. This internal state allows RNNs to exhibit dynamic temporal behavior, making them powerful for tasks where the order of input data matters.
+
+Types:
+one-one - traditional architecture
+one-many - production of music
+many-one - sentiment analysis
+many-many - langauge translation
+
+vanishing gradient problem
+vanishing gradient problem occurs when the gradients during backpropagation become extremely small, causing the weights to stop updating. This is particularly problematic in RNNs, where information needs to be propagated over long sequences
+number of hiddden layers grow gradient becomes very small and weights will hardly change this will hamper the learning process 
+
+exploding gradient problem
+The exploding gradient problem is a challenge that can occur during the training of deep neural networks. It happens when the gradients of the network's loss with respect to the parameters (weights) become too large
+
+when individual dervatives are large the final derivative will also become huge and weight would change darastically
+
+hidden state
+hidden state in an RNN carries information from previous time steps and serves as a memory mechanism. It helps the network maintain context and capture dependencies in sequential data
+
+Backpropagation through time (BPTT)
+BPTT is the algorithm used to train RNNs. It extends the backpropagation algorithm to handle sequences by unfolding the network through time. It essentially applies the standard backpropagation algorithm to the unrolled RNN over the entire sequence
+
+Activation function
+The activation function introduces non-linearity to the network, allowing it to learn complex patterns. Common activation functions used in RNNs include tanh and sigmoid.
+
 Advantages of RNNs:
 Handle sequential data effectively, including text, speech, and time series.
-Process inputs of any length, unlike feedforward neural networks.
+Process inputs of any length
 Share weights across time steps, enhancing training efficiency
 
 Disadvantages of RNNs:
 Prone to vanishing and exploding gradient problems, hindering learning.
 Training can be challenging, especially for long sequences.
 Computationally slower than other neural network architectures
+
+LSTM
+LSTMs are a type of recurrent neural network designed to address the vanishing gradient problem and capture long-term dependencies in sequential data. They use a more complex structure with memory cells and gates
+
+LSTM Cell
+The basic building block of an LSTM is the LSTM cell. The LSTM cell is designed to maintain a cell state that can capture long-term dependencies and selectively update or forget information
+
+Cell state
+cell state in an LSTM acts as a long-term memory that can carry information across multiple time steps. It allows LSTMs to capture dependencies in sequential data over extended period
+
+LSTMs handle input sequences of variable length
+LSTMs can handle variable-length sequences by processing input one time step at a time, updating the hidden state and cell state accordingly. This enables them to adapt to sequences of different lengths.
+
+sequence-to-sequence
+Sequence-to-sequence learning involves converting an input sequence into an output sequence. LSTMs are commonly used for this task by encoding the input sequence into a fixed-size vector and then decoding it into the output sequence.
+
+Advantages
+Long-Term Dependency Handling
+Vanishing Gradient Mitigation:
+Memory Cells:
+Adaptability to Variable-Length Sequences:
+Sequence-to-Sequence Learning:
+Effective for Time Series Prediction:
+
+Disadvantages
+Computational Complexity:
+Potential for Overfitting:prone to overfitting when training dataset is small or the model architecture is not properly regularized.
+Training Difficulty
+Difficulty in Learning Short-Term Dependencies:
+Limited Context Understanding:
+
+
