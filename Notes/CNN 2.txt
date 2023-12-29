@@ -1,0 +1,20 @@
+Data Augmentation: 
+Technique involving random transformations on the input data, such as rotation, flipping, and scaling, to artificially increase the size of the training dataset and improve model generalization.
+
+Transfer Learning: 
+Leveraging pre-trained models on large datasets and fine-tuning them for specific tasks, which is especially useful when working with limited labeled data.
+
+Xception	
+VGG16	
+ResNet50	
+InceptionV3	
+MobileNet
+LeNet, AlexNet
+
+ResNet
+ResNet,Residual Networks, is a type of deep neural network architecture designed to address the challenges of training very deep networks
+
+VGG
+VGG,Visual Geometry Group, is a deep convolutional neural network architecture It is known for its simplicity and effectiveness, achieving competitive performance on various image classification tasks. The architecture was introduced in the paper titled "Very Deep Convolutional Networks for Large-Scale Image Recognition
+
+VGG-16: 16 layers (13 convolutional, 3 fully connected)

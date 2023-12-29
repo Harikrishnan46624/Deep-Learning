@@ -1,22 +1,21 @@
 CNN
 A Convolutional Neural Network (CNN) is a type of deep neural network specifically designed for processing and analyzing visual data, such as images and videos. It's a class of artificial neural networks that has proven highly effective in various computer vision tasks.
 
+Why
+Traditional neural networks struggle with image data due to their large size and the spatial relationships present in images. CNNs were developed to address these challenges by leveraging the local connectivity pattern inspired by the visual cortex of animals.
+
 Convolutional Layer:
-Convolutional Operation: The core building block involves applying convolutional filters or kernels to the input data to extract local patterns. This helps in capturing hierarchical features.
+The core building block involves applying convolutional filters or kernels to the input data to extract local patterns. This helps in capturing hierarchical features.
 
 Feature Maps: The output of the convolution operation is known as a feature map, highlighting the presence of specific features in the input
 
 filter or kernel
 small matrix used for convolution operations. Convolution is a mathematical operation that combines two functions to produce a third function.In CNNs, convolution involves sliding a filter/kernel over the input data (image or feature map) to perform local operations.
 
-Convolution Operation
-Feature Map:
-Learning Filters:
-Multiple Filters:
 
 PADDING
 Padding is the process of adding extra pixels or values around the input data, usually zeros, before applying a convolution operation. It helps to preserve spatial information and mitigate issues at the borders of the input image.
-
+ 		(n + 2p - f + 1)
 Types
 Valid (No Padding), Same (Zero Padding)
 
@@ -29,6 +28,7 @@ Strided Convolution: The filter skips pixels as it moves, taking steps of more t
 
 Pooling
 Pooling is a downsampling operation applied to feature maps to reduce spatial dimensions and computational complexity
+and controlling overfitting
 
 Max Pooling:
 Operation: Takes the maximum value from a set of values in a region of the feature map.
@@ -41,4 +41,4 @@ Purpose: Provides a smoothed representation of the features in each region.
 Purpose of Pooling:
 Downsampling: Reduces the spatial dimensions of the feature maps, aiding in computational efficiency and reducing overfitting.
 
-RELU - helps cnn stay mathematically healthy by keeping learned values from getting stuck newar 0 or blowing up toward infinity
+RELU - helps cnn stay mathematically healthy by keeping learned values from getting stuck newar 0 or blowing up toward infinity used as the activation function to introduce non-linearity into the model, allowing it to learn complex patterns.
