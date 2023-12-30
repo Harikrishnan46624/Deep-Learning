@@ -12,9 +12,13 @@ MobileNet
 LeNet, AlexNet
 
 ResNet
-ResNet,Residual Networks, is a type of deep neural network architecture designed to address the challenges of training very deep networks
+Residual Network, is a deep learning architecture that was introduced to address the vanishing gradient problem in very deep neural networks. The key innovation in ResNet is the use of residual blocks, which enable the training of extremely deep networks		"Deep Residual Learning for Image Recognition"
+		ResNet-18, ResNet-34, ResNet-50, ResNet-101, and ResNet-152.
 
 VGG
-VGG,Visual Geometry Group, is a deep convolutional neural network architecture It is known for its simplicity and effectiveness, achieving competitive performance on various image classification tasks. The architecture was introduced in the paper titled "Very Deep Convolutional Networks for Large-Scale Image Recognition
+VGG,Visual Geometry Group, is a deep convolutional neural network architecture It is known for its simplicity and effectiveness, achieving competitive performance on various image classification tasks. 
+		"Very Deep Convolutional Networks for Large-Scale Image Recognition"
 
 VGG-16: 16 layers (13 convolutional, 3 fully connected)
+
+
