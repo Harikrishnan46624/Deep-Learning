@@ -1,0 +1,41 @@
+Encoder:
+The encoder is responsible for transforming the input data into a latent representation or a fixed-size vector. This process involves capturing the essential features or information from the input data.
+It compresses the input information into a lower-dimensional representation, which often contains the most relevant features.
+
+Decoder:
+The decoder takes the encoded representation produced by the encoder and reconstructs or generates the desired output.
+It translates the encoded information back into a format that matches the structure or dimensionality of the target output.
+
+Applications
+Autoencoders
+Sequence-to-Sequence Tasks
+Image-to-Image Translation
+Speech Recognition
+
+Autoencoders are self-supervised machine learning models which are used to reduce the size of input data by recreating it. These models are trained as supervised machine learning models and during inference, they work as unsupervised models that’s why they are called self-supervised models.
+
+TYPES
+Vanilla Autoencoders: Basic autoencoders that efficiently encode and decode data.
+Denoising Autoencoders: Improved robustness to noise and irrelevant information.
+Sparse Autoencoders: Learn more compact and efficient data representations.
+Contractive Autoencoders: Generate representations less sensitive to minor data variations.
+Variational Autoencoders: Generate new data points that resemble the training data
+
+
+Encoding
+Encoding is the process of converting information from one form to another. In various contexts, this can refer to converting data into a specific format, representation, or language
+
+Decoding
+Decoding is the reverse process of encoding. It involves converting the encoded data back into its original form
+
+
+
+
+
+
+The encoder LSTM is used to process the entire input sentence and encode it into a context vector
+
+The decoder LSTM or RNN units produce the words in a sentence one after another
+
+The main drawback of this approach is evident. If the encoder makes a bad summary, the translation will also be bad. And indeed it has been observed that the encoder creates a bad summary when it tries to understand longer sentences. It is called the long-range dependency problem of RNN/LSTMs.
+

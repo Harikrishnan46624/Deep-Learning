@@ -1,0 +1,47 @@
+LSTM
+LSTMs are a type of recurrent neural network designed to address the vanishing gradient problem and capture long-term dependencies in sequential data. They use a more complex structure with memory cells and gates
+
+Because of sigmoid we are facing vanishing gradient problem
+
+vanishing gradient problem
+vanishing gradient problem occurs when the gradients during backpropagation become extremely small, causing the weights to stop updating. This is particularly problematic in RNNs, where information needs to be propagated over long sequences
+number of hiddden layers grow gradient becomes very small and weights will hardly change this will hamper the learning process 
+
+exploding gradient problem
+The exploding gradient problem is a challenge that can occur during the training of deep neural networks. It happens when the gradients of the network's loss with respect to the parameters (weights) become too large
+
+when individual dervatives are large the final derivative will also become huge and weight would change darastically
+
+LSTM Cell
+The basic building block of an LSTM is the LSTM cell. The LSTM cell is designed to maintain a cell state that can capture long-term dependencies and selectively update or forget information
+
+Cell state
+cell state in an LSTM acts as a long-term memory that can carry information across multiple time steps. It allows LSTMs to capture dependencies in sequential data over extended period
+
+Forget Gate : Decides what information from the previous state should be thrown away or kept 
+		sigmoid(wf * ht-1*xt]+bf)
+Input Gate : Determines what new information should be stored in the memory cell.  
+		sigmoid(wi * ht-1*xt]+bi)
+Output Gate: Controls what information from the cell state should be used to compute the output
+		sigmoid(wo * ht-1*xt]+bf)
+
+LSTMs handle input sequences of variable length
+LSTMs can handle variable-length sequences by processing input one time step at a time, updating the hidden state and cell state accordingly. This enables them to adapt to sequences of different lengths.
+
+sequence-to-sequence
+Sequence-to-sequence learning involves converting an input sequence into an output sequence. LSTMs are commonly used for this task by encoding the input sequence into a fixed-size vector and then decoding it into the output sequence.
+
+Advantages
+Long-Term Dependency Handling
+Vanishing Gradient Mitigation:
+Memory Cells:
+Adaptability to Variable-Length Sequences:
+Sequence-to-Sequence Learning:
+Effective for Time Series Prediction:
+
+Disadvantages
+Computational Complexity:
+Difficulty in Learning Short-Term Dependencies:
+Potential for Overfitting:prone to overfitting when training dataset is small or the model architecture is not properly regularized.
+Training Difficulty
+Limited Context Understanding:

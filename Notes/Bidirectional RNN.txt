@@ -1,0 +1,27 @@
+Bidirectional RNN
+
+A Bidirectional Recurrent Neural Network (BRNN) is a powerful type of Recurrent Neural Network (RNN) that processes input data in both forward and backward directions simultaneously. This allows them to capture future context for each element in the sequence, leading to improved performance in various tasks.
+
+
+Bidirectional processing allows the model to capture information from both past and future contexts, enabling a more comprehensive understanding of the input sequence. They are particularly useful for tasks requiring a broader context, such as natural language processing
+
+Working
+Bidirectional RNNs process the input sequence in both forward and backward directions, using two separate hidden states.
+The forward pass processes the sequence from the beginning, while the backward pass processes it in reverse
+BiRNNs have two sets of hidden states: one for the forward pass and one for the backward pass.
+The final output is usually a combination of the information from both directions, which helps in capturing a more comprehensive context
+
+Forward and Backward Processing:
+In a Bi-RNN, the input sequence is processed in two directions: forward (from the beginning to the end) and backward (from the end to the beginning). Each time step produces a hidden state, and these states are combined to obtain the final representation of the sequence
+
+Advantages
+Contextual Understanding:
+Improved Performance in Certain Tasks:
+Better Handling of Long-Term Dependencies:
+
+Disadvantages
+Increased Computational Complexity:
+Higher Memory Consumption:
+Not Suitable for Real-Time Processing:
+
+

@@ -1,0 +1,26 @@
+GRU
+GRU (Gated Recurrent Unit) is a type of RNN designed to overcome limitations of traditional RNNs. It's a simpler alternative to LSTMs, effective for sequential data tasks like time series analysis and natural language processing.
+
+Update Gate(z) (Long Term memory): Determines how much of the past information should be passed along to the future
+			sigmoid(wz * [ht-1 * xt])
+Hidden State (h): This is the memory of the network that captures information about the sequence it has seen so far
+			(1-zt) * ht-1 + zt * candiate state
+Reset Gate (short-term memory): Determines how much of the past information should be forgotten
+			sigmoid(wr * [ht-1 * xt])
+candidate state:temporary hidden state, combining current input and past information.to decide want to kept or discard
+			tanh(w * [t=rt * ht-1 * xt])
+ 
+Backpropagation
+Training a GRU involves adjusting the weights using backpropagation through time (BPTT). The gradients are computed with respect to the loss function, and optimization algorithms are used to update the weights iteratively.
+
+Advantages
+Simplicity
+Fewer Parameters
+Effective for Short-Term Dependencies
+Faster Training
+
+Disadvantages
+May Struggle with Long-Term Dependencies
+Less Explicit Memory Control:
+Not Always Superior to LSTMs
+Application-Specific Performance0
